@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.furkanakdemir.surroundcardview.SurroundCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sampleSurroundCardView"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    app:cardCornerRadius="10dp"
+    app:scv_color="#03A9F4"
+    app:scv_duration="1000"
+    app:scv_startPoint="bottom_start"
+    app:scv_surrounded="true"
+    app:scv_width="6dp"
+    tools:ignore="MissingConstraints">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#040D12">
+
+        <ImageView
+            android:id="@+id/cardViewImageView"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginStart="20sp"
+            android:contentDescription="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/cardViewFavoriImageview"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/baseline_favorite_border_24"
+            android:contentDescription="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/cardViewSatirYazi"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/cardViewSatirYazi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="50dp"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@+id/cardViewImageView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/cardViewMainActivityCategoryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="55dp"
+            android:fontFamily="@font/playfairdisplaybold"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toRightOf="@+id/cardViewImageView"
+            app:layout_constraintTop_toBottomOf="@+id/cardViewSatirYazi"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.furkanakdemir.surroundcardview.SurroundCardView>
+
